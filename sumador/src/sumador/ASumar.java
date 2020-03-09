@@ -12,16 +12,22 @@ public class ASumar {
 		this.valorInicial = string;
 	}
 	
-
+/**
+ * Compara si el valor es menor de 10 y mayor que -1
+ * @return Devuelve una cadena de texto si el valor es positivo y menor de diez o otra cadena si es negtivo o mayor que 9
+ */
 	public String mostrar() {
 		String numero = valorInicial;
 		if (numero.length() == 1) {
 			return (numero + " = " + numero);
 		}
-		return ("N�mero incorrecto");
+		return ("Número incorrecto");
 	}	
 	
-	
+	/**
+	 * Compara si el número introducido es negativo
+	 * @return devuelve una cadena vacía si el valor es negativo
+	 */
 	public String mostrarNegativo() {
 		String numero = valorInicial;
 		if (Integer.parseInt(numero) > 0) {
@@ -31,7 +37,10 @@ public class ASumar {
 		}
 	}
 	
-	
+	/**
+	 * Compara si el número introducido es mayor que 9 y suma sus digitos
+	 * @return devuelve una cadena de texto con el valor total de la suma de los digitos del valor introducido.
+	 */
 	public String total() {
 		int suma = 0;
 		String fin = "";
