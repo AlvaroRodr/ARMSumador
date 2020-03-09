@@ -4,8 +4,7 @@ public class ASumar {
 	
 	String valorInicial;
 	/**
-	 * Método constructor para almacenar la variable
-	 * @author Salvador Galindo Martínez
+	 * @author Ãlvaro RodrÃ­guez MartÃ­nez
 	 * @param string
 	 * @version 1.0
 	 */
@@ -13,29 +12,15 @@ public class ASumar {
 		this.valorInicial = string;
 	}
 	
-	/**
-	 * Método que mide la longitud de la variable introducida 
-	 * y muestra el resultado
-	 * @author Salvador Galindo Martínez
-	 * @version 1.0
-	 * @return devuelve el resultado correcto si cumple la condición y si no, 
-	 * devuelve un mensaje de error
-	 */
+	
 	public String mostrar() {
 		String numero = valorInicial;
 		if (numero.length() == 1) {
 			return (numero + " = " + numero);
 		}
-		return ("Número incorrecto");
+		return ("Nï¿½mero incorrecto");
 	}	
 	
-	/**
-	 * Método que muestra una cadena de texto vacía si el número introducido
-	 * es negativo.
-	 * @author Salvador Galindo Martínez
-	 * @version 1.0
-	 * @return 
-	 */
 	public String mostrarNegativo() {
 		String numero = valorInicial;
 		if (Integer.parseInt(numero) > 0) {
@@ -44,13 +29,7 @@ public class ASumar {
 			return ("");
 		}
 	}
-	
-	/**
-	 * Método que suma los digitos de un número y muestra los números sumados y el resultado de la suma
-	 * @author Salvador Galindo Martínez
-	 * @version 1.0
-	 * @return 
-	 */
+
 	public String total() {
 		int suma = 0;
 		String fin = "";
@@ -60,7 +39,7 @@ public class ASumar {
 			if (i < 1) {
 				fin += digito;
 			}else {
-				fin += " + " + digito;
+				fin+= " + " +digito;
 			}
 		}
 		return (fin + " = " + suma);
